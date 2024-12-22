@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+:root{
+    --main-color:#24353f;
+    --second-color:#17a2b8;
+    --therd-color:#212529;
+    --text-color:#ced4da;
+    --text-white:white;
+    --hov-color:#ffc107;
+}
+
+.bg-main{
+    background-color: var(--main-color);
+}
+
+.bg-therd{
+    background-color: var(--therd-color);
+}
+
+.text-main{
+    color:var(--second-color);
+}
+
+
+.navbar-toggler{
+    background-color:var(--text-color);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.login{
+    box-shadow: -5px 2px 54px -9px black;
+}
+
+.login form input{
+    transition: 0.3s;
+    border: 1px solid var(--second-color);
+}
+
+.login form input:focus{
+    border: 1px solid #007bff;
+    color:  var(--text-color);
+    outline: none;
+}
+
+.login form input::placeholder{
+    color: var(--text-color);
+}
+
+.login form button{
+    transition: 0.3s;
+    border: 1px solid var(--second-color);
+    background-color: transparent;
+}
+
+.login form button:hover{
+    background-color: var(--second-color);
+    color:var(--text-color);
+}
+
+.login form a{
+    text-decoration: none;
+}
+
+.login form a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    box-shadow: -5px 2px 54px -9px black;
+}
+
+.nav-link, .nav-item{
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-item:hover{
+    background-color: var(--hov-color);
+}
+
+main h1{
+    box-shadow: -5px 2px 54px -9px black;
+}

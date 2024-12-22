@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login System</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="bg-main">
+
+        <div id="userPage" class=" d-none">
+            <nav class="navbar navbar-expand-lg position-fixed w-100">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item rounded-2 border border-warning d-flex justify-content-center">
+                                <a id="Logout" class="nav-link rounded-2 text-white-50 " aria-current="page" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div class="message d-flex align-items-center justify-content-center vh-100">
+                    <h1 class="text-main p-5  text-center bg-therd">Welcome <span id="changeName">yousuf kamal</span></h1>
+                </div>
+            </main>
+        </div>
+
+        <div id="allSign" class="all">
+            <div id="login" class="d-flex justify-content-center mt-5">
+                <div class="login w-50 bg-therd pb-2">
+                    <h1 class="text-center mt-5 text-main">Smart Login System</h1>
+                    <form class="text-center row justify-content-center">
+                        <input
+                            class="col-9 text-white bg-transparent m-auto my-2 py-2 rounded-2 "
+                            type="email"
+                            name="email"
+                            id="emailLogin"
+                            placeholder="Enter your email"
+                        >
+                        <input
+                            class="col-9 text-white bg-transparent m-auto my-2 py-2 rounded-2 "
+                            type="password"
+                            name="password"
+                            id="passwordLogin"
+                            placeholder="Enter your password"
+                        >
+                        <p id="loginMessage" class="text-danger m-0 mt-2 d-none w-75"></p>
+                        <button id="btn" class="col-9 m-auto my-3 py-2 rounded-2 text-main">Login</button>
+                        <p class="account mb-5 px-3 text-light">
+                            Don’t have an account?
+                            <a id="signUpLink" class="SignUp text-light">Sign Up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div id="SignUp" class="d-flex justify-content-center mt-5 d-none">
+                <div class="login w-50 bg-therd pb-2">
+                    <h1 class="text-center mt-5 text-main">Smart Login System</h1>
+                    <form class="text-center row justify-content-center">
+                        <input
+                            class="col-9 text-white bg-transparent m-auto my-2 py-2 rounded-2 "
+                            type="text"
+                            name="userName"
+                            id="userName"
+                            placeholder="Enter your name"
+                        >
+                        <input
+                            class="col-9 text-white bg-transparent m-auto my-2 py-2 rounded-2 "
+                            type="emailSignUp"
+                            name="emailSignUp"
+                            id="emailSignUp"
+                            placeholder="Enter your email"
+                        >
+                        <input
+                            class="col-9 text-white bg-transparent m-auto my-2 py-2 rounded-2 "
+                            type="password"
+                            name="passwordSignUp"
+                            id="passwordSignUp"
+                            placeholder="Enter your password"
+                        >
+                        <p id="SignUpMessage1" class="text-danger m-0 mt-2 d-none w-75"></p>
+                        <p id="SignUpMessage2" class="text-danger m-0 mt-2 d-none w-75"></p>
+                        <button id="btnSignUp" class="col-9 m-auto my-3 py-2 rounded-2 text-main">Sign Up</button>
+                        <p class="account mb-5 text-light">
+                            You have an account? 
+                            <a id="signinLink" class="SignUp text-light">Signin</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/min.js"></script>
+    </body>
+</html>
